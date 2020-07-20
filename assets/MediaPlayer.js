@@ -36,11 +36,13 @@ MediaPlayer.prototype.togglePlay = function() {
 MediaPlayer.prototype.play = function() {
     this.media.play(); 
     this.btnPlay.innerHTML = '⏸'
+    document.title = 'Media Player | Playing'
 }
 
 MediaPlayer.prototype.pause = function() {
     this.media.pause(); 
     this.btnPlay.innerHTML = '▶️'
+    document.title = 'Media Player | Paused'
 }
 
 MediaPlayer.prototype.mute = function(){
